@@ -95,6 +95,7 @@ body {
 }
 /*===== ======== Landing Page Sunny Side ====== ================== ========= */
 .banner {
+  width: 100vw;
   background-color: var(--clr-mdb2);
   height: 80vh;
   min-height: 600px;
@@ -113,22 +114,26 @@ body {
   padding-right: 2rem;
 }
 .menu {
-  width: 250px;
+  width: 350px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: #fff;
   align-items: center;
 }
 .menu .menu__list {
   display: flex;
-  width: 150px;
-  justify-content: space-evenly;
+  width: 200px;
+  justify-content: space-between;
   align-items: center;
 }
 .menu__list .list-link {
   color: #f2f5f5;
   font-size: 1.6rem;
   font-weight: 500;
+}
+.menu__list .list-link:hover {
+  color: #131417;
+  font-weight: 700;
 }
 .menu .contact {
   padding: 1rem;
@@ -143,4 +148,111 @@ body {
 .contact:hover {
   color: antiquewhite;
   background-color: #000;
+}
+/*== Main ==*/
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.main .text {
+  font-size: 7rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 2rem auto;
+}
+.main .arrow {
+  margin-top: 8rem;
+  animation: topArrow 1s 1s ease-in-out infinite;
+}
+@keyframes topArrow {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+/*== Section ==*/
+.section1,
+.section2 {
+  display: flex;
+  height: 350px;
+}
+.section1 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1 .text-container {
+  /*  width: 70%; */
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.text-container h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+.text-container p {
+  font-size: 1.4rem;
+  padding: 1rem;
+  font-weight: 500;
+}
+.btn {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.right {
+  padding: 1rem;
+}
+.right-img {
+  width: 425px;
+  height: 250px;
+  object-fit: cover;
+  background-size: cover;
+}
+/*== === ============ ==== > Media Queries < ========= ==== ================*/
+@media (max-width: 575.98px) {
+  .header {
+  }
+  .banner {
+  }
+  .section1 {
+    flex-direction: column;
+    height: auto;
+  }
+  .section1 .left {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+  }
+  .text-container {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-container h1 {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+  .text {
+    text-align: center;
+  }
+  .btn {
+    width: 100%;
+  }
+  .right {
+    padding: 2rem;
+  }
+  .right-img {
+    width: 100%;
+    height: 300px;
+  }
 }
