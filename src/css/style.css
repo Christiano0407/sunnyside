@@ -1,3 +1,5 @@
+/*=== Import ======*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,700&display=swap");
 /*===== ======== Root ====== ================== ========= */
 :root {
   --header-height: 3rem;
@@ -32,7 +34,7 @@
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
-  --body-font: ;
+  --font-family: "Montserrat", sans-serif;
   --h1-font-size: 1.5rem;
   --normal-font-size: 0.938rem;
   --tiny-font-size: 0.625rem;
@@ -89,5 +91,6 @@ img {
 body {
   width: 100%;
   background: #fff;
+  font-family: var(--font-family);
 }
 /*===== ======== Landing Page Sunny Side ====== ================== ========= */
