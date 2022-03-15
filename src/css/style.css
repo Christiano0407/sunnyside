@@ -213,7 +213,13 @@ body {
 }
 .right-img {
   width: 425px;
-  height: 250px;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+.left-img {
+  width: 425px;
+  height: 100%;
   object-fit: cover;
   background-size: cover;
 }
