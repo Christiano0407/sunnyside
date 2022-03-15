@@ -1,0 +1,24 @@
+{
+  "name": "sunnyside",
+  "version": "1.0.0",
+  "description": "landing Page Responsive",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christiano0407/sunnyside.git"
+  },
+  "keywords": [
+    "javascript",
+    "landing",
+    "responsive"
+  ],
+  "author": "Chris04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Christiano0407/sunnyside/issues"
+  },
+  "homepage": "https://github.com/Christiano0407/sunnyside#readme"
+}
