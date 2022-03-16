@@ -182,7 +182,8 @@ body {
   display: flex;
   height: 350px;
 }
-.section1 .left {
+.section1,
+.left {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,31 +199,85 @@ body {
   font-size: 4rem;
   font-weight: 700;
   padding: 1rem;
+  margin-left: 1rem;
 }
 .text-container p {
   font-size: 1.4rem;
   padding: 1rem;
   font-weight: 500;
+  margin-left: 1rem;
 }
 .btn {
   margin: 1rem 0;
   padding: 1rem;
+  margin-left: 1rem;
+}
+
+.section2,
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left.two {
 }
 .right {
   padding: 1rem;
+}
+.right.plus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.right h1 {
+  font-size: 35px;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+.right p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 .right-img {
   width: 425px;
   height: 100%;
   object-fit: cover;
   background-size: cover;
+  border-radius: 2rem;
 }
 .left-img {
   width: 425px;
   height: 100%;
   object-fit: cover;
   background-size: cover;
+  border-radius: 2rem;
+  margin-left: 1rem;
 }
+.btn.two {
+  outline: 2px solid #131417;
+}
+.section3,
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-three {
+  width: 40rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.left-on {
+  width: 40rem;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
 /*== === ============ ==== > Media Queries < ========= ==== ================*/
 @media (max-width: 575.98px) {
   .header {
@@ -254,11 +309,29 @@ body {
   .btn {
     width: 100%;
   }
+  /*section 2*/
+  .section2 {
+    flex-direction: column;
+    height: auto;
+    margin-top: 2rem;
+  }
+  .left.two {
+    flex-direction: column;
+  }
   .right {
     padding: 2rem;
+  }
+  .right.plus {
+    text-align: center;
+  }
+  .right.plus h1 {
+    width: 100%;
   }
   .right-img {
     width: 100%;
     height: 300px;
+  }
+  .btn.two {
+    outline: none;
   }
 }
