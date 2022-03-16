@@ -161,7 +161,6 @@ body {
   font-size: 7rem;
   font-weight: 600;
   color: #fff;
-  margin: 2rem auto;
 }
 .main .arrow {
   margin-top: 8rem;
@@ -284,6 +283,9 @@ body {
   }
   .banner {
   }
+  .main .text {
+    margin-bottom: 5rem;
+  }
   .section1 {
     flex-direction: column;
     height: auto;
@@ -333,5 +335,9 @@ body {
   }
   .btn.two {
     outline: none;
+  }
+  /*Section 03*/
+  .left.three {
+    flex-direction: column;
   }
 }
