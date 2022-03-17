@@ -256,7 +256,7 @@ body {
   margin-left: 1rem;
 }
 .btn.two {
-  outline: 2px solid #131417;
+  /*  outline: 2px solid #131417; */
 }
 .section3,
 .left {
@@ -380,6 +380,11 @@ body {
   color: #5e8b82;
   font-size: 1.5rem;
   font-weight: 700;
+  cursor: pointer;
+}
+.footer__navigation span:hover {
+  color: #f2f5f5;
+  filter: opacity(0.5);
 }
 .social__media {
   display: flex;
@@ -394,6 +399,14 @@ body {
 }
 .list .social-link {
   padding: 1.5rem;
+  cursor: pointer;
+}
+.social-link:hover {
+  color: #f2f5f5;
+  opacity: 0.5;
+}
+.social-link:active {
+  transform: scale(0.9);
 }
 /*== === ============ ==== > Media Queries < ========= ==== ================*/
 @media (max-width: 575.98px) {
