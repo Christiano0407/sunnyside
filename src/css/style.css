@@ -365,6 +365,7 @@ body {
   background-color: #90d4c5;
   width: 100%;
   padding: 2rem;
+  margin-top: 2rem;
 }
 .footer .footer-logo {
 }
@@ -386,11 +387,13 @@ body {
 }
 .social__media .list {
   justify-content: space-between;
-  width: 50%;
   display: flex;
   align-items: center;
   padding: 1rem;
   margin: 1rem auto;
+}
+.list .social-link {
+  padding: 1.5rem;
 }
 /*== === ============ ==== > Media Queries < ========= ==== ================*/
 @media (max-width: 575.98px) {
@@ -466,6 +469,15 @@ body {
     padding-bottom: 20px;
   }
   .footer .footer-logo {
-    color: #207465;
+    width: 200px;
+  }
+  .footer__navigation {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 250px;
+  }
+  .footer__navigation .social-link {
+    padding: 1rem;
   }
 }
