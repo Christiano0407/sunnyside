@@ -360,6 +360,15 @@ body {
   border-radius: 1rem;
   border: none;
 }
+/*Footer*/
+.footer {
+  background-color: #90d4c5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /*== === ============ ==== > Media Queries < ========= ==== ================*/
 @media (max-width: 575.98px) {
