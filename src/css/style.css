@@ -473,6 +473,24 @@ body.dark .client-text {
 .social-link:active {
   transform: scale(0.9);
 }
+
+/* == Intersection Animations  ==*/
+.animationOne {
+  animation: animationOne 1s 1s ease-in-out;
+}
+@keyframes animationOne {
+  from {
+    /* transform: translateX(-300px); */
+    opacity: 0;
+  }
+  to {
+    /*  transform: translateX(0px); */
+    opacity: 1;
+  }
+}
+.animationTwo {
+}
+
 /*== === ============ ==== > Media Queries < ========= ==== ================*/
 @media (max-width: 575.98px) {
   .header {

@@ -7,7 +7,10 @@ const header = document.querySelector(".header");
 const main = document.querySelector(".main");
 const sectionOne = document.querySelector(".section1");
 const sectionTwo = document.querySelector(".section2");
-//>Modo Oscuro =========================>>
+const sectionThree = document.getElementById("sectionThree");
+console.log(sectionThree);
+
+//>Modo Oscuro =========================> =============== ====>
 const btnSwitch = document.getElementById("switch");
 console.log(btnSwitch);
 
@@ -31,7 +34,7 @@ if (localStorage.getItem("dark-mode") === "true") {
   btnSwitch.classList.remove("active");
 }
 
-//> Intersection Observer ===============> ===>
+//> Intersection Observer ===============> === =======================>
 
 const rootObserver = {
   rootMargin: "-200px 0px 0px 0px",
@@ -52,4 +55,12 @@ const sectionObserverPlus = new IntersectionObserver(function (
 rootObserver);
 
 sectionObserverPlus.observe(sectionTwo);
+/* sectionObserverPlus.observe(sectionThree); */
 //> Animation ==>
+/* const tl = gsap.timeline({ default: { ease: "power2.out" } });
+tl.fromTo(
+  ".animationTwo",
+  { opacity: 0 },
+  { opacity: 1, delay: 0.5, duration: 0.5 },
+  " < "
+); */
