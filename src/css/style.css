@@ -117,6 +117,9 @@ body {
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
+
+  position: sticky;
+  top: 0;
 }
 .menu {
   width: 450px;
