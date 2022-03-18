@@ -1,5 +1,4 @@
 //>Modo Oscuro
-
 const btnSwitch = document.getElementById("switch");
 console.log(btnSwitch);
 
@@ -22,3 +21,7 @@ if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.remove("dark");
   btnSwitch.classList.remove("active");
 }
+
+//> Intersection Observer ==>
+
+//> Animation ==>
