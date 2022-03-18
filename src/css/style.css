@@ -92,6 +92,11 @@ body {
   width: 100%;
   background: #fff;
   font-family: var(--font-family);
+  transition: 0.3s ease all;
+}
+/*=Mode Dark=*/
+.dark {
+  background: #131417;
 }
 /*===== ======== Landing Page Sunny Side ====== ================== ========= */
 .banner {
@@ -114,7 +119,7 @@ body {
   padding-right: 2rem;
 }
 .menu {
-  width: 350px;
+  width: 450px;
   display: flex;
   justify-content: space-evenly;
   color: #fff;
@@ -122,7 +127,7 @@ body {
 }
 .menu .menu__list {
   display: flex;
-  width: 200px;
+  width: 225px;
   justify-content: space-between;
   align-items: center;
 }
@@ -130,10 +135,28 @@ body {
   color: #f2f5f5;
   font-size: 1.6rem;
   font-weight: 500;
+  filter: opacity(0.5);
 }
 .menu__list .list-link:hover {
-  color: #131417;
+  color: #fff;
   font-weight: 700;
+}
+.list-link:hover::after {
+  content: " ";
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  animation: scaleLink 0.3s 0.3s ease-in-out forwards;
+}
+@keyframes scaleLink {
+  form {
+    transform: scaleX(-100%);
+  }
+  to {
+    transform: scaleX(50%);
+  }
 }
 .menu .contact {
   padding: 1rem;
@@ -144,6 +167,13 @@ body {
   color: #131417;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
+}
+.light .switch {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.switch:active {
+  transform: scale(0.9);
 }
 .contact:hover {
   color: antiquewhite;
