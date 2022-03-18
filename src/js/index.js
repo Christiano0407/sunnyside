@@ -1,4 +1,13 @@
-//>Modo Oscuro
+//> cONST =====>
+const wrapper = document.querySelector(".wrapper");
+//console.log(wrapper);
+const banner = document.querySelector(".banner");
+const header = document.querySelector(".header");
+//console.log(header);
+const main = document.querySelector(".main");
+const sectionOne = document.querySelector(".section1");
+const sectionTwo = document.querySelector(".section2");
+//>Modo Oscuro =========================>>
 const btnSwitch = document.getElementById("switch");
 console.log(btnSwitch);
 
@@ -22,6 +31,25 @@ if (localStorage.getItem("dark-mode") === "true") {
   btnSwitch.classList.remove("active");
 }
 
-//> Intersection Observer ==>
+//> Intersection Observer ===============> ===>
 
+const rootObserver = {
+  rootMargin: "-200px 0px 0px 0px",
+};
+
+const sectionObserverPlus = new IntersectionObserver(function (
+  entries,
+  sectionObserverPlus
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      header.classList.add("scroller");
+    } else {
+      header.classList.remove("scroller");
+    }
+  });
+},
+rootObserver);
+
+sectionObserverPlus.observe(sectionTwo);
 //> Animation ==>
