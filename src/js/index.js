@@ -51,13 +51,25 @@ tl.fromTo(
 tl.fromTo(
   "#text",
   { y: "-400", opacity: 0 },
-  { y: "0", opacity: 1, delay: 1, duration: 1 },
+  { y: "0", opacity: 1, delay: 1.5, duration: 1.5 },
   " < "
 );
 tl.fromTo(
   "#arrow",
   { opacity: 0 },
-  { opacity: 1, delay: 1.5, duration: 1.5 },
+  { opacity: 1, delay: 2, duration: 2 },
+  " < "
+);
+tl.fromTo(
+  ".text-container",
+  { x: "-200", opacity: 0 },
+  { x: "0", opacity: 1, delay: 1, duration: 1 },
+  " < "
+);
+tl.fromTo(
+  ".right",
+  { x: "200", opacity: 0 },
+  { x: "0", opacity: 1, delay: 1, duration: 1 },
   " < "
 );
 tl.fromTo(leftThree, { x: "-300" }, { x: "0", delay: 1, duration: 1 }, " < ");
@@ -76,7 +88,7 @@ tl.fromTo(
 );
 
 //>Modo Oscuro =========================> =============== ====>
-//** Modo Oscuro ======================== >>> */
+//** Modo Oscuro ======================== ============== ========= >>> */
 const btnSwitch = document.getElementById("switch");
 console.log(btnSwitch);
 
@@ -100,7 +112,7 @@ if (localStorage.getItem("dark-mode") === "true") {
   btnSwitch.classList.remove("active");
 }
 //> Intersection Observer ===============> === =======================>
-//* =============  Intersection Observer  ==================  *//
+//* =============  Intersection Observer  ==================   =============*/
 const rootObserver = {
   rootMargin: "-200px 0px 0px 0px",
 };
