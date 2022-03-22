@@ -18,6 +18,43 @@ Sunny Side Landing Page and Responsive Design. Challenge Web
 > Image Mobile
 > ![](https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/pc2lqrbbho37ouwzvcas.jpg)
 
+## Tools
+
+> Frameworks
+> GSAP
+
+- [GSAP](https://greensock.com/)
+
+> Intersection Observer
+
+- [MDN_Intersection_Observer](https://developer.mozilla.org/es/docs/Web/API/Intersection_Observer_API)
+
+## Styles Project
+
+> Pallette Colors:
+
+- clr-black: #000;
+- clr-white: #fff;
+- #01b4e4;
+- #4fcf70,
+- #fad648,
+- #a767e5,
+- #12bcfe,
+- #44ce7b
+
+> Font Size:
+
+- font-family: "Montserrat", sans-serif;
+
+> Media Queries:
+
+- @media (max-width: 365px)
+- @media (max-width: 575.98px)
+- @media (max-width: 690px) and (min-width: 576px)
+- @media (min-width: 1024px)
+- @media (min-width: 1024px)
+- @media (min-width: 1440px)
+
 ## MIT LICENSE
 
 > MIT License
