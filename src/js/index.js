@@ -21,6 +21,8 @@ const leftThree = document.querySelector("#leftThree");
 const leftCherry = document.querySelector("#leftCherry");
 const rightOrange = document.querySelector("#rightOrange");
 const testimonial = document.querySelector("#testimonial");
+const cards = document.querySelector("#cards");
+const footer = document.querySelector("#footer");
 //**GSAP==> */
 const tl = gsap.timeline({ ease: "power2.out" });
 
@@ -96,9 +98,20 @@ tl.fromTo(
   testimonial,
   { opacity: 0 },
   { opacity: 1, delay: 1, duration: 1 },
-  " +=1 "
+  " < "
 );
-
+tl.fromTo(
+  cards,
+  { opacity: 0 },
+  { opacity: 1, delay: 1.5, duration: 1.5 },
+  " < "
+);
+tl.fromTo(
+  footer,
+  { y: "200", opacity: 0 },
+  { y: "0", opacity: 1, delay: 1.5, duration: 1.5 },
+  " < "
+);
 //>Modo Oscuro =========================> =============== ====>
 //** Modo Oscuro ======================== ============== ========= >>> */
 const btnSwitch = document.getElementById("switch");
