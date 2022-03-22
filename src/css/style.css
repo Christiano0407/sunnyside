@@ -607,3 +607,71 @@ body.dark .client-text {
     width: 250px;
   }
 }
+
+@media (max-width: 690px) and (min-width: 576px) {
+  .text {
+    text-align: center;
+  }
+  .text-container h1 {
+    font-size: 3rem;
+  }
+  .text-container p {
+    font-size: 1.2rem;
+  }
+  .btn {
+    margin: 0;
+  }
+  .right h1 {
+    font-size: 3rem;
+  }
+  .right p {
+    font-size: 1.2rem;
+  }
+  .left-three {
+    width: 3rem;
+  }
+  .left-on {
+    width: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section1 .text-container {
+    width: 60%;
+  }
+  .right-img {
+    width: 425px;
+  }
+  .left-img {
+    width: 425px;
+  }
+  .right.plus {
+    width: 60%;
+  }
+}
+@media (min-width: 1440px) {
+  .section1 .text-container {
+    width: 70%;
+  }
+  .right-img {
+    width: 450px;
+  }
+  .left-img {
+    width: 450px;
+  }
+  .right.plus {
+    width: 70%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  // Styles for landscape mode.
+  body::after {
+    content: "Landscape";
+  }
+}
+@media screen and (orientation: portrait) {
+  // Styles for portrait mode.
+  body::after {
+    content: "Portrait";
+  }
+}
