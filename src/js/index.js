@@ -1,4 +1,4 @@
-//> cONST =====>
+//** Variables e Constantes  =======================>>>  */
 const wrapper = document.querySelector(".wrapper");
 //console.log(wrapper);
 const banner = document.querySelector(".banner");
@@ -10,7 +10,73 @@ const sectionTwo = document.querySelector(".section2");
 const sectionThree = document.getElementById("sectionThree");
 console.log(sectionThree);
 
+//**  Animations with GSAP ============================>  */
+//** = Variables = */
+const bannerAdd = document.querySelector("#banner");
+const headerOne = document.querySelector("#header");
+const logo = document.querySelector("#logo");
+const menuNew = document.querySelector("#menu");
+const mainNew = document.querySelector("#main");
+const leftThree = document.querySelector("#leftThree");
+const leftCherry = document.querySelector("#leftCherry");
+const rightOrange = document.querySelector("#rightOrange");
+//**GSAP==> */
+const tl = gsap.timeline({ ease: "power2.out" });
+
+//**== Events == */
+tl.fromTo(
+  bannerAdd,
+  { opacity: 0 },
+  { opacity: 1, delay: 0.5, duration: 0.5 },
+  " < "
+);
+tl.fromTo(
+  headerOne,
+  { y: "-200", opacity: 0 },
+  { y: "0", opacity: 1, delay: 1, duration: 1 },
+  " < "
+);
+tl.fromTo(
+  ".menu__list",
+  { y: "-100", opacity: 0 },
+  { y: "0", opacity: 1, delay: 1.5, duration: 1.5 },
+  " < "
+);
+tl.fromTo(
+  "#light",
+  { y: "-100", opacity: 0 },
+  { y: "0", opacity: 1, delay: 1.5, duration: 1.5 },
+  " < "
+);
+tl.fromTo(
+  "#text",
+  { y: "-400", opacity: 0 },
+  { y: "0", opacity: 1, delay: 1, duration: 1 },
+  " < "
+);
+tl.fromTo(
+  "#arrow",
+  { opacity: 0 },
+  { opacity: 1, delay: 1.5, duration: 1.5 },
+  " < "
+);
+tl.fromTo(leftThree, { x: "-300" }, { x: "0", delay: 1, duration: 1 }, " < ");
+tl.fromTo(
+  leftCherry,
+  { opacity: 0 },
+  { opacity: 1, delay: 1.5, duration: 1.5 },
+  " < "
+);
+
+tl.fromTo(
+  rightOrange,
+  { opacity: 0 },
+  { opacity: 1, delay: 1, duration: 1 },
+  " < "
+);
+
 //>Modo Oscuro =========================> =============== ====>
+//** Modo Oscuro ======================== >>> */
 const btnSwitch = document.getElementById("switch");
 console.log(btnSwitch);
 
@@ -33,13 +99,11 @@ if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.remove("dark");
   btnSwitch.classList.remove("active");
 }
-
 //> Intersection Observer ===============> === =======================>
-
+//* =============  Intersection Observer  ==================  *//
 const rootObserver = {
   rootMargin: "-200px 0px 0px 0px",
 };
-
 const sectionObserverPlus = new IntersectionObserver(function (
   entries,
   sectionObserverPlus
