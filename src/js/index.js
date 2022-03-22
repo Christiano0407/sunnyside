@@ -20,6 +20,7 @@ const mainNew = document.querySelector("#main");
 const leftThree = document.querySelector("#leftThree");
 const leftCherry = document.querySelector("#leftCherry");
 const rightOrange = document.querySelector("#rightOrange");
+const testimonial = document.querySelector("#testimonial");
 //**GSAP==> */
 const tl = gsap.timeline({ ease: "power2.out" });
 
@@ -70,6 +71,12 @@ tl.fromTo(
   ".right",
   { x: "200", opacity: 0 },
   { x: "0", opacity: 1, delay: 1, duration: 1 },
+  " +=1 "
+);
+tl.fromTo(
+  ".left-img",
+  { x: "-200", opacity: 0 },
+  { x: "0", opacity: 1, delay: 1, duration: 1 },
   " < "
 );
 tl.fromTo(leftThree, { x: "-300" }, { x: "0", delay: 1, duration: 1 }, " < ");
@@ -79,12 +86,17 @@ tl.fromTo(
   { opacity: 1, delay: 1.5, duration: 1.5 },
   " < "
 );
-
 tl.fromTo(
   rightOrange,
   { opacity: 0 },
   { opacity: 1, delay: 1, duration: 1 },
-  " < "
+  " += "
+);
+tl.fromTo(
+  testimonial,
+  { opacity: 0 },
+  { opacity: 1, delay: 1, duration: 1 },
+  " +=1 "
 );
 
 //>Modo Oscuro =========================> =============== ====>
